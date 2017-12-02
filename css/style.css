@@ -7,6 +7,7 @@
 
 h1 {
   font-size: 70px;
+  text-decoration: underline;
 }
 
 .container {
@@ -15,11 +16,28 @@ h1 {
   width: 100vw;
   background-image: url("../assets/mountain.jpg");
   background-size: cover;
-  display: table;
+  padding-top: 30vh;
 }
 
 .titles {
-  display: table-cell;
   vertical-align: middle;
   text-align: center;
+  background-color: rgba(0,0,0,0.3);
+  padding: 50px 0;
+}
+
+h1:nth-child(3) {
+  font-size: 75px;
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 30px;
+    }
+    h2 {
+      font-size: 20px;
+    }
+    h1:nth-child(3) {
+      font-size: 35px;
+    }
 }
